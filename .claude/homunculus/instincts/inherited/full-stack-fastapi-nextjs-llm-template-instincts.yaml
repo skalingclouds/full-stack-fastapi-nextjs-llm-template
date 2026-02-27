@@ -1,0 +1,688 @@
+# Instincts generated from https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+# Generated: 2026-02-27T05:21:14.103Z
+# Version: 2.0
+
+---
+id: full-stack-fastapi-nextjs-llm-template-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 45 chars
+- Based on 130 commits
+
+---
+id: full-stack-fastapi-nextjs-llm-template-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: full-stack-fastapi-nextjs-llm-template-import-alias
+trigger: "when importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Import Alias
+
+## Action
+
+Use path aliases (@/, ~/) instead of relative imports
+
+## Evidence
+
+- Import analysis shows alias pattern
+- Example: import { x } from '@/lib/x'
+
+---
+id: full-stack-fastapi-nextjs-llm-template-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Export Style
+
+## Action
+
+Prefer default exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: default
+
+---
+id: full-stack-fastapi-nextjs-llm-template-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: 
+
+---
+id: full-stack-fastapi-nextjs-llm-template-test-framework
+trigger: "when writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Test Framework
+
+## Action
+
+Use vitest as the test framework
+
+## Evidence
+
+- Test framework detected: vitest
+- File pattern: *.spec.ts
+
+---
+id: full-stack-fastapi-nextjs-llm-template-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Test Naming
+
+## Action
+
+Name test files using the pattern: *.spec.ts
+
+## Evidence
+
+- File pattern: *.spec.ts
+- Consistent across test files
+
+---
+id: full-stack-fastapi-nextjs-llm-template-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Test Types
+
+## Action
+
+Write unit, e2e tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, e2e
+- Coverage config: no
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~7x per month
+- Files: template/{{cookiecutter.project_slug}}/frontend/src/components/chat/*, template/{{cookiecutter.project_slug}}/frontend/src/hooks/*, template/{{cookiecutter.project_slug}}/frontend/src/types/*
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-test-driven-development
+trigger: "when adding new functionality"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Test Driven Development
+
+## Action
+
+Follow the test-driven-development workflow:
+1. Write failing test
+2. Implement code to pass test
+3. Refactor if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~5x per month
+- Files: **/*.test.*, **/*.spec.*, src/**/*
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-version-release
+trigger: "when doing version release"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Version Release
+
+## Action
+
+Follow the version-release workflow:
+1. Update version in pyproject.toml
+2. Update CHANGELOG.md with new features/fixes
+3. Sometimes update docs/CHANGELOG.md
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: pyproject.toml, CHANGELOG.md, docs/CHANGELOG.md
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-user-model-schema-sync
+trigger: "when doing user model schema sync"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow User Model Schema Sync
+
+## Action
+
+Follow the user-model-schema-sync workflow:
+1. Update user database model
+2. Update corresponding user schema
+3. Ensure type consistency between model and schema
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: template/{{cookiecutter.project_slug}}/backend/app/db/models/user.py, template/{{cookiecutter.project_slug}}/backend/app/schemas/user.py
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-add-ai-agent-framework
+trigger: "when doing add ai agent framework"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Add Ai Agent Framework
+
+## Action
+
+Follow the add-ai-agent-framework workflow:
+1. Update config.py with new framework options
+2. Update prompts.py for user selection
+3. Add agent implementation file
+4. Update API routes
+5. Update cookiecutter variables
+6. Add to backend dependencies
+7. Update tests
+8. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: fastapi_gen/config.py, fastapi_gen/prompts.py, template/{{cookiecutter.project_slug}}/backend/app/agents/*.py
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-dependency-updates
+trigger: "when doing dependency updates"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Dependency Updates
+
+## Action
+
+Follow the dependency-updates workflow:
+1. Update GitHub workflow files
+2. Update uv.lock file
+3. Sometimes update pyproject.toml
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: .github/workflows/*.yml, uv.lock, pyproject.toml
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-template-feature-integration
+trigger: "when doing template feature integration"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Template Feature Integration
+
+## Action
+
+Follow the template-feature-integration workflow:
+1. Add configuration options to config.py
+2. Add user prompts for feature selection
+3. Update cookiecutter.json variables
+4. Add template files for the feature
+5. Update post-generation hooks
+6. Add comprehensive tests
+7. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: fastapi_gen/config.py, fastapi_gen/prompts.py, template/cookiecutter.json
+
+---
+id: full-stack-fastapi-nextjs-llm-template-workflow-documentation-update
+trigger: "when doing documentation update"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Workflow Documentation Update
+
+## Action
+
+Follow the documentation-update workflow:
+1. Update main README.md
+2. Update documentation files in docs/
+3. Sometimes update template README files
+4. Update changelog
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: README.md, docs/*.md, template/{{cookiecutter.project_slug}}/README.md
+
+---
+id: full-stack-fastapi-nextjs-llm-template-camel-case-files
+trigger: "When creating new files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Camel Case Files
+
+## Action
+
+Use camelCase naming convention for file names
+
+## Evidence
+
+- Naming convention pattern detected in codeStyle analysis
+- Files follow camelCase pattern in template structure
+
+---
+id: full-stack-fastapi-nextjs-llm-template-pascal-case-classes
+trigger: "When defining new classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Pascal Case Classes
+
+## Action
+
+Use PascalCase naming convention for class names
+
+## Evidence
+
+- PascalCase class naming detected in codeStyle analysis
+- Consistent across Python backend files
+
+---
+id: full-stack-fastapi-nextjs-llm-template-screaming-snake-constants
+trigger: "When defining constants"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- SCREAMING_SNAKE_CASE constant naming in codeStyle analysis
+- Standard Python convention followed
+
+---
+id: full-stack-fastapi-nextjs-llm-template-alias-imports
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Alias Imports
+
+## Action
+
+Use alias import style
+
+## Evidence
+
+- Import style set to 'alias' in codeStyle analysis
+
+---
+id: full-stack-fastapi-nextjs-llm-template-vitest-testing
+trigger: "When writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Vitest Testing
+
+## Action
+
+Use vitest framework with *.spec.ts file pattern
+
+## Evidence
+
+- Testing framework: vitest
+- File pattern: *.spec.ts
+- Config files include vitest.config.ts
+
+---
+id: full-stack-fastapi-nextjs-llm-template-try-catch-errors
+trigger: "When handling errors"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Try Catch Errors
+
+## Action
+
+Use try-catch error handling style
+
+## Evidence
+
+- Error handling style: try-catch in analysis
+- No custom error classes or boundaries detected
+
+---
+id: full-stack-fastapi-nextjs-llm-template-conventional-commits
+trigger: "When making commits"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Conventional Commits
+
+## Action
+
+Use conventional commit format with prefixes: fix, docs, build, feat, test
+
+## Evidence
+
+- Commit examples: 'fix: enums', 'docs: change repo name', 'feat: add SQLModel ORM support'
+- Consistent prefix usage across commits
+
+---
+id: full-stack-fastapi-nextjs-llm-template-45-char-commits
+trigger: "When writing commit messages"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template 45 Char Commits
+
+## Action
+
+Keep commit messages around 45 characters average length
+
+## Evidence
+
+- Average commit length: 45 characters
+- Examples show concise commit messages
+
+---
+id: full-stack-fastapi-nextjs-llm-template-version-release-workflow
+trigger: "When preparing a new version release"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Version Release Workflow
+
+## Action
+
+Update pyproject.toml version, then CHANGELOG.md, then optionally docs/CHANGELOG.md
+
+## Evidence
+
+- Version-release workflow frequency: 8x/month
+- Consistent pattern in pyproject.toml and CHANGELOG.md updates
+
+---
+id: full-stack-fastapi-nextjs-llm-template-user-model-sync
+trigger: "When updating user data structures"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template User Model Sync
+
+## Action
+
+Synchronize both user.py model and user.py schema files together
+
+## Evidence
+
+- User-model-schema-sync workflow pattern
+- Files: backend/app/db/models/user.py and backend/app/schemas/user.py always updated together
+
+---
+id: full-stack-fastapi-nextjs-llm-template-ai-agent-integration
+trigger: "When adding support for a new AI agent framework"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Ai Agent Integration
+
+## Action
+
+Update config.py, prompts.py, add agent implementation, update API routes, update cookiecutter.json, add dependencies, update tests
+
+## Evidence
+
+- Add-ai-agent-framework workflow with 8-step process
+- Files: fastapi_gen/config.py, prompts.py, agent routes, cookiecutter.json
+
+---
+id: full-stack-fastapi-nextjs-llm-template-dependency-update-workflow
+trigger: "When updating dependencies"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Dependency Update Workflow
+
+## Action
+
+Update GitHub workflow files, then uv.lock file, optionally update pyproject.toml
+
+## Evidence
+
+- Dependency-updates workflow pattern
+- Files: .github/workflows/*.yml, uv.lock, pyproject.toml
+
+---
+id: full-stack-fastapi-nextjs-llm-template-template-feature-workflow
+trigger: "When adding new optional features to the cookiecutter template"
+confidence: 0.88
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Template Feature Workflow
+
+## Action
+
+Update config.py options, add prompts, update cookiecutter.json, add template files, update hooks, add tests, update docs
+
+## Evidence
+
+- Template-feature-integration workflow with 7-step process
+- Files: fastapi_gen/config.py, prompts.py, cookiecutter.json, hooks
+
+---
+id: full-stack-fastapi-nextjs-llm-template-tdd-pattern
+trigger: "When implementing new features with tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Tdd Pattern
+
+## Action
+
+Write failing test first, then implement code to pass test, then refactor
+
+## Evidence
+
+- Test-driven-development workflow pattern
+- Commit sequence: test first, then implementation
+- Files: **/*.test.*, **/*.spec.*
+
+---
+id: full-stack-fastapi-nextjs-llm-template-feature-dev-workflow
+trigger: "When implementing standard features"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Feature Dev Workflow
+
+## Action
+
+Add feature implementation, add tests, then update documentation
+
+## Evidence
+
+- Feature-development workflow frequency: 7x/month
+- Commit sequence pattern
+- Files: components/chat/*, hooks/*, types/*, tests
+
+---
+id: full-stack-fastapi-nextjs-llm-template-docs-update-workflow
+trigger: "When project documentation needs updates"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: skalingclouds/full-stack-fastapi-nextjs-llm-template
+---
+
+# Full Stack Fastapi Nextjs Llm Template Docs Update Workflow
+
+## Action
+
+Update main README.md, then docs/*.md files, optionally template README, then changelog
+
+## Evidence
+
+- Documentation-update workflow frequency: 4x/month
+- Files: README.md, docs/*.md, CHANGELOG.md
+
